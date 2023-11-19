@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px){
+    body{
+        header{
+            nav{
+                .toggle-menu{
+                    position: fixed;
+                    display: flex;
+                    height: 35;
+                    z-index: 1000;
+                    filter: invert(0.5);
+                }
+                .menu{
+                    position: fixed;
+                    top: 0;
+                    flex-direction: column;
+                    transition: transform 0.3s;
+                    transform: translateX(500%);
+                    font-size: $size-titulo-movil;
+                    .logo{
+                        width: 25vw;
+                    }
+                }
+
+                .menu--show{
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}

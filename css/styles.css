@@ -1,0 +1,88 @@
+/*general*/
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+* {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0C120C;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*layout*/
+/*main*/
+header {
+  margin-bottom: 10;
+}
+header nav .toggle-menu {
+  position: absolute;
+  display: none;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  width: 50px;
+}
+header nav .menu {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #0C120C;
+  z-index: 100;
+  font-size: 1vw;
+  box-shadow: 2px 4px 2px 0.5px #ECFF5C;
+}
+header nav .menu a {
+  color: #FBFFFE;
+}
+header nav .menu a:hover {
+  text-decoration: underline #ECFF5C;
+  transition: 0.5s;
+  transform: scale(1.5);
+}
+header nav .menu li {
+  padding: 1em;
+}
+header nav .menu .logo {
+  width: 3.75vw;
+}
+
+/*main*/
+/*index*/
+/*index*/
+/*responsive*/
+@media screen and (max-width: 768px) {
+  body header nav .toggle-menu {
+    position: fixed;
+    display: flex;
+    height: 35;
+    z-index: 1000;
+    filter: invert(0.5);
+  }
+  body header nav .menu {
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    transition: transform 0.3s;
+    transform: translateX(500%);
+    font-size: 4vw;
+  }
+  body header nav .menu .logo {
+    width: 25vw;
+  }
+  body header nav .menu--show {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
