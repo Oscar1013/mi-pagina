@@ -1,0 +1,13 @@
+@mixin link-hover{
+    color: $color-terciario;
+                &:hover{
+                    text-decoration: underline $color-secundario;
+                    transition: 0.5s;
+                    transform: scale(1.2);
+                }
+}
+
+@mixin borde{
+    border: 2px solid $color-secundario;
+    border-radius: 0.5rem;
+}

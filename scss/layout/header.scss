@@ -1,4 +1,4 @@
-/*main*/
+
 header{
     margin-bottom: 10;
     nav{
@@ -9,6 +9,9 @@ header{
             right: 1rem;
             cursor: pointer;
             width: 50px;
+        }
+        .logo-movil{
+            display: none;
         }
         .menu{
             position: relative;
@@ -25,21 +28,18 @@ header{
             font-size: $size-parrafo-pc;
             box-shadow: 2px 4px 2px 0.5px $color-secundario;
             a{
-                color: $color-terciario;
-                &:hover{
-                    text-decoration: underline $color-secundario;
-                    transition: 0.5s;
-                    transform: scale(1.5);
-                }
+                @include link-hover
             }
             li{
                 padding: 1em;
             }
 
             .logo{
-                width: 3.75vw;
+                width: 5vw;
+                border-radius: 100%;
+                border-radius: 100%;
+                border: 2px solid $color-terciario;
             }
         }
     }
 }
-/*main*/
