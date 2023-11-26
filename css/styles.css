@@ -65,33 +65,39 @@ header nav .menu .logo {
 /*sobre mi*/
 main {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin-top: 100;
+  margin: 75;
 }
 main .card {
   position: relative;
+  background-color: #0C120C;
   padding: 10;
   width: 500;
   height: 550;
   border: 10px solid #ECFF5C;
-  align-items: center;
   /* for all social containers*/
   /* instagram*/
   /* twitter*/
   /* linkdin*/
   /* Whatsapp*/
 }
+main .card .img-card {
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+}
 main .card .info-sm {
   width: fit-content;
   height: fit-content;
-  background-color: rgb(238, 238, 238);
+  background-color: #FBFFFE;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 25px;
+  padding: 10px;
   gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  margin-top: 10;
+  border-radius: 0.5rem;
 }
 main .card .socialContainer {
   width: 52px;
@@ -101,7 +107,7 @@ main .card .socialContainer {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition-duration: 0.3s;
+  transition-duration: s;
 }
 main .card .containerOne:hover {
   background-color: #d62976;
@@ -120,7 +126,6 @@ main .card .containerFour:hover {
   transition-duration: 0.3s;
 }
 main .card .socialContainer:active {
-  transform: scale(0.9);
   transition-duration: 0.3s;
 }
 main .card .socialSvg {
